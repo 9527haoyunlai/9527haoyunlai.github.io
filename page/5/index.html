@@ -1,0 +1,457 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>9527好运来的博客 - personal blog</title><meta name="author" content="好运来"><meta name="copyright" content="好运来"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="9527好运来的博客">
+<meta property="og:url" content="https://9527haoyunlai.github.io/page/5/index.html">
+<meta property="og:site_name" content="9527好运来的博客">
+<meta property="og:description" content="个人博客">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://9527haoyunlai.github.io/img/avatar.jpg">
+<meta property="article:author" content="好运来">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://9527haoyunlai.github.io/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://9527haoyunlai.github.io/page/5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.14.0-b3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.35/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>(()=>{
+      const saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+      
+      window.btf = {
+        saveToLocal: saveToLocal,
+        getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.src = url
+          script.async = true
+          script.onerror = reject
+          script.onload = script.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            script.onload = script.onreadystatechange = null
+            resolve()
+          }
+
+          Object.keys(attr).forEach(key => {
+            script.setAttribute(key, attr[key])
+          })
+
+          document.head.appendChild(script)
+        }),
+
+        getCSS: (url, id = false) => new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = url
+          if (id) link.id = id
+          link.onerror = reject
+          link.onload = link.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            link.onload = link.onreadystatechange = null
+            resolve()
+          }
+          document.head.appendChild(link)
+        }),
+
+        addGlobalFn: (key, fn, name = false, parent = window) => {
+          const pjaxEnable = false
+          if (!pjaxEnable && key.startsWith('pjax')) return
+
+          const globalFn = parent.globalFn || {}
+          const keyObj = globalFn[key] || {}
+    
+          if (name && keyObj[name]) return
+    
+          name = name || Object.keys(keyObj).length
+          keyObj[name] = fn
+          globalFn[key] = keyObj
+          parent.globalFn = globalFn
+        }
+      }
+    
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+      
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })()</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '9527好运来的博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-07-10 00:06:21'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">67</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="9527好运来的博客"><span class="site-name">9527好运来的博客</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">9527好运来的博客</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/9527haoyunlai" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:chenqi1253@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/mysql%E5%9F%BA%E7%A1%80/" title="Mysql基础">Mysql基础</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:38.000Z" title="Created 2024-07-09 14:08:38">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">MySQL基础今日目标：
+
+
+完成MySQL的安装及登陆基本操作
+能通过SQL对数据库进行CRUD
+能通过SQL对表进行CRUD
+能通过SQL对数据进行CRUD
+
+
+1，数据库相关概念以前我们做系统，数据持久化的存储采用的是文件存储。存储到文件中可以达到系统关闭数据不会丢失的效果，当然文件存储也有它的弊端。
+假设在文件中存储以下的数据：
+1234姓名	年龄	性别	住址张三	23	男	北京西三旗李四	24	女	北京西二旗王五	25	男	西安软件新城
+
+现要修改李四这条数据的性别数据改为男，我们现学习的IO技术可以通过将所有的数据读取到内存中，然后进行修改再存到该文件中。通过这种方式操作存在很大问题，现在只有三条数据，如果文件中存储1T的数据，那么就会发现内存根本就存储不了。
+现需要既能持久化存储数据，也要能避免上述问题的技术使用在我们的系统中。数据库就是这样的一门技术。
+1.1  数据库
+&#x3D;&#x3D;存储和管理数据的仓库，数据是有组织的进行存储。&#x3D;&#x3D;
+
+数据库英文名是 DataBase，简称DB。
+
+
+数据库就是将数据存储在硬盘上，可以达到持久化存储的效果 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/mysql%E9%AB%98%E7%BA%A7/" title="mysql高级">mysql高级</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:37.000Z" title="Created 2024-07-09 14:08:37">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">mysql高级今日目标
+
+
+掌握约束的使用
+
+掌握表关系及建表原则
+
+重点掌握多表查询操作
+
+掌握事务操作
+
+
+
+1，约束
+
+上面表中可以看到表中数据存在一些问题：
+
+id 列一般是用标示数据的唯一性的，而上述表中的id为1的有三条数据，并且 马花疼 没有id进行标示
+
+柳白 这条数据的age列的数据是3000，而人也不可能活到3000岁
+
+马运  这条数据的math数学成绩是-5，而数学学得再不好也不可能出现负分
+
+柳青 这条数据的english列（英文成绩）值为null，而成绩即使没考也得是0分
+
+
+针对上述数据问题，我们就可以从数据库层面在添加数据的时候进行限制，这个就是约束。
+1.1  概念
+约束是作用于表中列上的规则，用于限制加入表的数据
+例如：我们可以给id列加约束，让其值不能重复，不能为null值。
+
+约束的存在保证了数据库中数据的正确性、有效性和完整性
+添加约束可以在添加数据的时候就限制不正确的数据，年龄是3000，数学成绩是-5分这样无效的数据，继而保障数据的完整性。
+
+
+1.2  分类
+非空约束： 关键字是 NOT NULL
+
+  保证列中所有的数据不能有null值 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/Mybatis/" title="MyBatis练习">MyBatis练习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:36.000Z" title="Created 2024-07-09 14:08:36">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">Mybatis练习目标
+
+
+能够使用映射配置文件实现CRUD操作
+能够使用注解实现CRUD操作
+
+
+1，配置文件实现CRUD
+如上图所示产品原型，里面包含了品牌数据的 查询 、按条件查询、添加、删除、批量删除、修改 等功能，而这些功能其实就是对数据库表中的数据进行CRUD操作。接下来我们就使用Mybatis完成品牌数据的增删改查操作。以下是我们要完成功能列表：
+
+
+查询
+查询所有数据
+查询详情
+条件查询
+
+
+添加
+修改
+修改全部字段
+修改动态字段
+
+
+删除
+删除一个
+批量删除
+
+
+
+
+我们先将必要的环境准备一下。
+1.1  环境准备
+数据库表（tb_brand）及数据准备
+1234567891011121314151617181920212223-- 删除tb_brand表drop table if exists tb_brand;-- 创建tb_brand表create table tb_brand(    -- id 主键    id           int primary key auto_increment,    -- 品牌名称    brand_name   varch ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/Maven&amp;MyBatis/" title="Maven&amp;MyBatis">Maven&amp;MyBatis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:35.000Z" title="Created 2024-07-09 14:08:35">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">Maven&amp;MyBatis目标
+
+
+能够使用Maven进行项目的管理
+能够完成Mybatis代理方式查询数据
+能够理解Mybatis核心配置文件的配置
+
+
+1，MavenMaven是专门用于管理和构建Java项目的工具，它的主要功能有：
+
+提供了一套标准化的项目结构
+
+提供了一套标准化的构建流程（编译，测试，打包，发布……）
+
+提供了一套依赖管理机制
+
+
+标准化的项目结构：
+项目结构我们都知道，每一个开发工具（IDE）都有自己不同的项目结构，它们互相之间不通用。我再eclipse中创建的目录，无法在idea中进行使用，这就造成了很大的不方便，如下图:前两个是以后开发经常使用的开发工具
+
+
+而Maven提供了一套标准化的项目结构，所有的IDE使用Maven构建的项目完全一样，所以IDE创建的Maven项目可以通用。如下图右边就是Maven构建的项目结构。
+
+
+
+
+标准化的构建流程：
+
+
+如上图所示我们开发了一套系统，代码需要进行编译、测试、打包、发布，这些操作如果需要反复进行就显得特别麻烦，而Maven提供了一套简单的命令来完成项目构建。
+依赖管理：
+依赖管理其实就是管理你项目所 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/JSP/" title="JSP">JSP</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:34.000Z" title="Created 2024-07-09 14:08:34">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">JSP今日目标：
+
+
+理解 JSP 及 JSP 原理
+能在 JSP中使用 EL表达式 和 JSTL标签
+理解 MVC模式 和 三层架构
+能完成品牌数据的增删改查功能
+
+
+1，JSP 概述&#x3D;&#x3D;JSP（全称：Java Server Pages）：Java 服务端页面。&#x3D;&#x3D;是一种动态的网页技术，其中既可以定义 HTML、JS、CSS等静态内容，还可以定义 Java代码的动态内容，也就是 JSP = HTML + Java。如下就是jsp代码
+1234567891011&lt;html&gt;    &lt;head&gt;        &lt;title&gt;Title&lt;/title&gt;    &lt;/head&gt;    &lt;body&gt;        &lt;h1&gt;JSP,Hello World&lt;/h1&gt;        &lt;%        	System.out.println(&quot;hello,jsp~&quot;);        %&gt;    &lt;/body&gt;&lt;/ht ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/JDBC/" title="JDBC">JDBC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:33.000Z" title="Created 2024-07-09 14:08:33">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">JDBC今日目标
+
+
+掌握JDBC的的CRUD
+理解JDBC中各个对象的作用
+掌握Druid的使用
+
+
+1，JDBC概述在开发中我们使用的是java语言，那么势必要通过java语言操作数据库中的数据。这就是接下来要学习的JDBC。
+1.1  JDBC概念
+JDBC   就是使用Java语言操作关系型数据库的一套API
+全称：( Java DataBase Connectivity ) Java 数据库连接
+
+
+
+我们开发的同一套Java代码是无法操作不同的关系型数据库，因为每一个关系型数据库的底层实现细节都不一样。如果这样，问题就很大了，在公司中可以在开发阶段使用的是MySQL数据库，而上线时公司最终选用oracle数据库，我们就需要对代码进行大批量修改，这显然并不是我们想看到的。我们要做到的是同一套Java代码操作不同的关系型数据库，而此时sun公司就指定了一套标准接口（JDBC），JDBC中定义了所有操作关系型数据库的规则。众所周知接口是无法直接使用的，我们需要使用接口的实现类，而这套实现类（称之为：驱动）就由各自的数据库厂商给出。
+1.2  JDBC本质
+官方（sun公司）定义的 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/JavaScript/" title="JavaScript">JavaScript</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:32.000Z" title="Created 2024-07-09 14:08:32">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">JavaScript今日目标
+
+
+掌握 JavaScript 的基础语法
+掌握 JavaScript 的常用对象（Array、String）
+能根据需求灵活运用定时器及通过 js 代码进行页面跳转
+能通过DOM 对象对标签进行常规操作
+掌握常用的事件
+能独立完成表单校验案例
+
+
+1，JavaScript简介&#x3D;&#x3D;JavaScript 是一门跨平台、面向对象的脚本语言&#x3D;&#x3D;，而Java语言也是跨平台的、面向对象的语言，只不过Java是编译语言，是需要编译成字节码文件才能运行的；JavaScript是脚本语言，不需要编译，由浏览器直接解析并执行。
+JavaScript 是用来控制网页行为的，它能使网页可交互；那么它可以做什么呢？如改变页面内容、修改指定元素的属性值、对表单进行校验等，下面是这些功能的效果展示：
+
+改变页面内容
+
+
+当我点击上面左图的 点击我 按钮，按钮上面的文本就改为上面右图内容，这就是js 改变页面内容的功能。
+
+修改指定元素的属性值
+
+
+当我们点击上图的 开灯 按钮，效果就是上面右图效果；当我点击 关灯 按钮，效果就是上面左图效果。其 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/HTTP&amp;Tomcat&amp;Servlet/" title="HTTP&amp;Tomcat&amp;Servlet">HTTP&amp;Tomcat&amp;Servlet</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:31.000Z" title="Created 2024-07-09 14:08:31">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">HTTP&amp;Tomcat&amp;Servlet今日目标：
+
+
+了解JavaWeb开发的技术栈
+理解HTTP协议和HTTP请求与响应数据的格式
+掌握Tomcat的使用
+掌握在IDEA中使用Tomcat插件
+理解Servlet的执行流程和生命周期
+掌握Servlet的使用和相关配置
+
+
+1，Web概述1.1 Web和JavaWeb的概念&#x3D;&#x3D;Web是全球广域网，也称为万维网(www)，能够通过浏览器访问的网站。&#x3D;&#x3D;在我们日常的生活中，经常会使用浏览器去访问百度、京东、传智官网等这些网站，这些网站统称为Web网站。如下就是通过浏览器访问传智官网的界面:我们知道了什么是Web，那么JavaWeb又是什么呢？顾名思义&#x3D;&#x3D;JavaWeb就是用Java技术来解决相关web互联网领域的技术栈。&#x3D;&#x3D;等学习完JavaWeb之后，同学们就可以使用Java语言开发我们上述所说的网站。而国内很多大型网站公司也是首选Java语言来解决web互联网相关的问题。那都有哪些公司的系统是使用Java语言的呢? 使用Java语言开发互联网 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/HTML&amp;CSS/" title="HTML&amp;CSS">HTML&amp;CSS</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:30.000Z" title="Created 2024-07-09 14:08:30">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">HTML&amp;CSS今日目标：
+
+
+能够掌握课程中讲解的标签的使用
+了解css的使用
+
+
+1，HTML1.1  介绍HTML 是一门语言，所有的网页都是用HTML 这门语言编写出来的，也就是HTML是用来写网页的，像京东，12306等网站有很多网页。
+
+
+
+这些都是网页展示出来的效果。而HTML也有专业的解释
+&#x3D;&#x3D;HTML(HyperText Markup Language)：超文本标记语言：&#x3D;&#x3D;
+
+超文本：超越了文本的限制，比普通文本更强大。除了文字信息，还可以定义图片、音频、视频等内容
+如上图看到的页面，我们除了能看到一些文字，同时也有大量的图片展示；有些网页也有视频，音频等。这种展示效果超越了文本展示的限制。
+
+标记语言：由标签构成的语言
+之前学习的XML就是标记语言，由一个一个的标签组成，HTML 也是由标签组成 。我们在浏览器页面右键可以查看页面的源代码，如下
+
+可以看到如下内容，就是由一个一个的标签组成的
+
+
+这些标签不像XML那样可以自定义，&#x3D;&#x3D;HTML中的标签都是预定义好的，运行在浏览器上并由浏览器解析，& ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/09/JavaWeb/HTML/" title="HTML快速入门">HTML快速入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-07-09T06:08:29.000Z" title="Created 2024-07-09 14:08:29">2024-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">快速入门1.新建文本文件，后缀名改为 .html&#x2F;.htm
+2.编写 HTML结构标签
+3.在中使用定义标题字体
+4.使用标签定义图片
+5.保存后，使用浏览器打开该文件
+| 标签           | 描述                                        || ————– | ——————————————- |                                 || &lt;HTML&gt;   | 定义 HTML 文档                              || &lt;head&gt;   | 定义关于文档的信息                          || &lt;title&gt;  | 定义文档的标题                              || &lt;body&gt;   | 定义文档的主体                              |
+基础标签
+
+
+标签
+描述
+
+
+
+&lt;h1&gt;  ~  &lt;h6&gt;
+定义标题，h1最大，h6最小
+
+
+ ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/4/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#content-inner">6</a><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/6/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">好运来</div><div class="author-info__description">个人博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">67</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/9527haoyunlai" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:chenqi1253@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/09/SpringBoot+SSM/day01-HTML-CSS/" title="Untitled">Untitled</a><time datetime="2024-07-09T10:46:18.949Z" title="Created 2024-07-09 18:46:18">2024-07-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/09/SpringBoot+SSM/DataGrip%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/" title="Untitled">Untitled</a><time datetime="2024-07-09T10:46:18.948Z" title="Created 2024-07-09 18:46:18">2024-07-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/09/SpringBoot+SSM/api%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/" title="Untitled">Untitled</a><time datetime="2024-07-09T10:46:18.947Z" title="Created 2024-07-09 18:46:18">2024-07-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/09/SpringBoot+SSM/AliOSS/" title="Untitled">Untitled</a><time datetime="2024-07-09T10:46:18.946Z" title="Created 2024-07-09 18:46:18">2024-07-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/09/SpringBoot+SSM/%E5%93%8D%E5%BA%94%E7%8A%B6%E6%80%81%E7%A0%81/" title="Untitled">Untitled</a><time datetime="2024-07-09T10:46:18.944Z" title="Created 2024-07-09 18:46:18">2024-07-09</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JavaSE%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">JavaSE基础</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JavaWeb/"><span class="card-category-list-name">JavaWeb</span><span class="card-category-list-count">14</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">Java基础</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Mysql/"><span class="card-category-list-name">Mysql</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Spring%E5%92%8CSSM%E6%A1%86%E6%9E%B6/"><span class="card-category-list-name">Spring和SSM框架</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/"><span class="card-category-list-name">前端</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/SpringFramework/" style="font-size: 1.3em; color: #99a1ac">SpringFramework</a> <a href="/tags/SpringBoot/" style="font-size: 1.1em; color: #999">SpringBoot</a> <a href="/tags/Maven/" style="font-size: 1.1em; color: #999">Maven</a> <a href="/tags/Web/" style="font-size: 1.4em; color: #99a5b6">Web</a> <a href="/tags/MyBatis/" style="font-size: 1.1em; color: #999">MyBatis</a> <a href="/tags/SpringMVC/" style="font-size: 1.2em; color: #999da3">SpringMVC</a> <a href="/tags/JavaSE/" style="font-size: 1.5em; color: #99a9bf">JavaSE</a> <a href="/tags/Java%E9%9D%A2%E8%AF%95/" style="font-size: 1.1em; color: #999">Java面试</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">July 2024</span><span class="card-archive-list-count">67</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">67</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-07-09T16:06:21.014Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 好运来</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.14.0-b3"></script><script src="/js/main.js?v=4.14.0-b3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.35/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const runMermaid = (ele) => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from(ele).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+    
+    codeMermaidEle.forEach(ele => {
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.innerHTML = `<pre class="mermaid-src" hidden>${ele.textContent}</pre>`
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (false) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js').then(runMermaidFn)
+  }
+  
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
